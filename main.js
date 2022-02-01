@@ -1,7 +1,7 @@
 const grid = document.querySelector('.keypad-grid')
 const keypad = [
     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
-    ['a', 's', 'd', 'f', 'g', 'h', 'k', 'l'],
+    ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'],
     ['enter', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'back']
 ]
 const triesGrid = document.querySelector('.tries-grid')
