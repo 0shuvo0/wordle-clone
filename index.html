@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wordle</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col main">
+            <div class="tries-grid">
+                <!-- Will be populated using JavaScript -->
+            </div>
+            <div class="keypad-grid">
+                <!-- Will be populated using JavaScript -->
+            </div>
+        </div>
+        <div class="col info">
+           <p class="title">Guess the <b>WORDLE</b> in 6 tries</p>
+           <p>Each guess must be a valid 5 letter word. Hit the enter button to submit.</p>
+           <p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p>
+           <img src="example.png" alt="">
+           <hr>
+           <p class="info">A new WORDLE will be available each day!</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

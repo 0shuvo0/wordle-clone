@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    padding: 1em;
+    margin: 30px auto;
+    background-color: #fff;
+}
+.col.main{
+    flex-grow: 1;
+    min-width: 60%;
+    margin-right: 1em;
+}
+.col.info{
+    padding: 0 1em;
+}
+
+.keypad-grid .row{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.keypad-grid .row:nth-child(2){
+    margin: .5em 0;
+}
+.row .key{
+    flex-grow: 1;
+    text-align: center;
+    padding: .75em 0;
+    background-color: rgb(241, 242, 243);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.row .key:hover{
+    background-color: rgb(228, 229, 230);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info p{
+    margin-bottom: .75em;
+    font-size: 1.2em;
+    color: rgb(58, 58, 58);
+}
+.info .title{
+    font-size: 1.5em;
+}
+.info img{
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+.info .info{
+    font-size: 1em;
+    margin-top: .25em;
+}
+
+.tries-grid{
+    margin-bottom: 2em;
+}
+.tries-grid .row{
+    display: flex;
+    gap: 1em;
+}
+.tries-grid .row{
+    margin-bottom: 1em;
+}
+.tries-grid .row .cell{
+    border: 2px solid rgb(184, 183, 183);
+    flex-grow: 1;
+    text-align: center;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+}
+
+.row .cell.correct{
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+}
+.row .cell.wrong_pos{
+    background-color: #c9b458;
+    border-color: #c9b458;
+}
+.row .cell.incorrect{
+    background-color: #787c7e;
+    border-color: #787c7e;
+}
+
+@media (max-width: 650px){
+    .container{
+        flex-direction: column;
+    }
+    .col{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .main{
+        margin-bottom: 3em !important;
+    }
+}
